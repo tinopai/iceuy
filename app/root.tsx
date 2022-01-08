@@ -6,10 +6,20 @@ import {
   Scripts,
   ScrollRestoration
 } from "remix";
+
+import styles from "./tailwind.css";
+export function links() {
+  return [{ rel: 'stylesheet', href: styles }];
+}
+
 import type { MetaFunction } from "remix";
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return {
+    title: "ice.uy",
+    description: "it do be drippin doe",
+    url: "https://ice.uy",
+  };
 };
 
 export default function App() {
